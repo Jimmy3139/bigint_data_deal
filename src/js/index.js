@@ -2,7 +2,7 @@ import "jquery";
 import "../css/main.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Carousel } from "bootstrap";
-import { getMemberOperateRecord, articleDetail } from "../api/index";
+import { getMemberOperateRecord, articleDetail, getDevice, getVersion } from "../api/index";
 
 
 const hello = "Hello World";
@@ -40,6 +40,24 @@ async function articleDetailData() {
 
 }
 
+async function getDeviceInfo() {
+  const roomData = await getDevice();
+  console.log('start2');
+  console.log(roomData);
+
+}
+
+async function getVersionInfo() {
+  const roomData = await getVersion();
+  console.log('start3');
+  console.log("roomData : ", roomData);
+
+}
+
 
 getMemberOperateRecordData();
 articleDetailData();
+
+//getDeviceInfo()
+//getVersionInfo()
+

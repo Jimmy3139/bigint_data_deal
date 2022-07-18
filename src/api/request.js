@@ -8,8 +8,7 @@ const request = axios.create({
   // withCredentials: true, // 跨域請求時是否發送cookies
   headers: {
     Authorization:
-      "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjU3OTUxMjY0NDg2ODc2Nzc0NDAiLCJuYmYiOjE2NTY5MDM4OTcsImV4cCI6MTY1NjkwNTY5NywiaWF0IjoxNjU2OTAzODk3LCJpc3MiOiJab25lIiwiYXVkIjoiQVBQIn0.fhrt-pEd3uE2Dcuj7EJv8oVTlgVvHFtv3TF1ts3rnqQ",
-
+      "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjE1NDc0MjE0NTUwMzE5OTIzMjAiLCJuYmYiOjE2NTgxMTQxMzgsImV4cCI6MTY1ODExNTkzOCwiaWF0IjoxNjU4MTE0MTM4LCJpc3MiOiJab25lIiwiYXVkIjoiQVBQIn0.PQwc4NmM8ecGed2tYeifbJo4iWD6n22JamtWb-baU8I",
 
   },
   transformResponse: [function (data) {
